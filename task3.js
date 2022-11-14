@@ -45,6 +45,7 @@ const showHistory = document.querySelector('.btn-show');
 sendBtn.addEventListener('click', () => {
     let name = author.value;
     let text = message.value;
+    message.value = '';
     messenger.send(name, text);
 });
 const history = document.querySelector('.history');
